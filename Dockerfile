@@ -9,7 +9,7 @@ RUN yum -y update && yum -y install squid which
 
 COPY squid.conf /etc/squid/squid.conf
 
-EXPOSE 3128/tcp
+EXPOSE 3128
 
 VOLUME ["${SQUID_CACHE_DIR}"]
 
